@@ -1,0 +1,492 @@
+@font-face {
+    font-family: Nunito;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+}
+
+*{
+    
+    color: rgb(235, 235, 235);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Nunito;
+}
+body{
+    background-color: rgb(9, 29, 0);
+}
+
+header{
+    width: 100%;
+    z-index: 2;
+    
+}
+
+.back-img{
+    width: 100%;
+    height: 80vh;
+} 
+
+
+.nav-bar{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    margin: auto;
+    position: fixed;
+}
+
+
+
+
+.logo
+{
+    display: flex;
+    margin-left: 10%;
+    width: 50%;
+    top: 0;
+}
+
+.logo h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.site-nav{
+    margin: auto 10px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlaces-menu{
+    display: flex;
+}
+
+.enlaces-menu li{
+    margin:auto 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+
+.enlaces-menu li:hover{
+    border-bottom: 3px solid chocolate;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger span{
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 35px;
+    margin: 10px auto;
+    border-radius: 2px;
+
+}
+
+
+.container-header
+{
+    margin:auto;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0%;
+    top: 10vh;
+    /* background: red; */
+}
+
+.container-header div
+{
+    /* border: 1px solid; */
+    width: 50%;
+    height: 100;
+}
+
+#products
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+
+}
+
+#products h2{
+    color: white;
+    margin-top: 10vh;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.cards{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.card{
+    width: 30%;
+    height: 80%;
+    margin: auto 1%;
+    border: 1px solid chocolate;
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-img{
+    margin: auto;
+    width: 45%;
+}
+
+.card-img img{
+    width:100%;
+    /* background-color: black; */
+    margin: auto;
+}
+
+.card-info{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card-info h4{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.card-info p{
+    font-size: 1.2rem;
+}
+
+.card-info p:nth-last-child(2){
+    font-size: 3rem;
+    color: chocolate;
+}
+
+.btn-compra{
+    width: 50%;
+    padding: 5px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
+.btn-compra:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+
+}
+
+.container-btn-procucts{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20vh;
+}
+
+.container-btn-procucts button {
+    width: 30%;
+    height: 100%;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid chocolate;
+}
+
+.container-btn-procucts button:hover{
+    background-color: chocolate;
+    color: black;
+}
+
+#sucursales{
+    width: 97%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sucursales{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-sucursales img{
+    width: 20%;
+}
+
+.container-sucursales h2{
+    font-size: 2rem;
+}
+
+.container-sucursales p{
+    font-size: 2rem;
+    color: chocolate;
+}
+
+.mapa-caba{
+    width: 60%;
+    height: 100%;
+}
+
+.mapa-caba iframe{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    width: 15%;
+}
+
+
+
+
+
+/* ======================= 
+    COMIENZA EL RESPONSIVE 
+======================== */
+
+
+
+
+/*   ===   TABLET   ===*/
+@media (min-width: 451px) and (max-width: 768px){
+    .back-img{
+        width: 100%;
+        height: 60vh;
+    } 
+
+    .cards{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 40%;
+        margin: 20px;
+    }
+
+    .container-btn-procucts{
+        margin-top: 62vh;
+        width: 100%;
+        height: 15vh;
+    }
+
+}
+
+
+/*   ===   MENU HAMBURGUESA   ===*/
+@media (max-width: 450px ),
+(max-width:768px){
+     
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 5px;
+        transition: 0.2s 0.1s;
+    }
+
+    .hamburger:hover{
+        transform: rotate(360deg);
+    }
+
+    .hamburger:focus { outline: none; }
+
+    #mynav{
+        width: 100%;
+    }
+    .site-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        width: 100%;
+    }
+
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: none;
+        opacity:0;
+        background-color: black;
+    }
+
+    .enlaces-menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    @keyframes muestaMenu{
+        from{opacity:0;}
+        to{opacity:1;}
+    }
+
+    .enlaces-menu.activado{
+        display: flex;
+        animation: muestaMenu 500ms ease-in-out both;
+    }
+
+    .br-1.animado{
+        transform: rotate(-45deg) translate(-10px, 8px);
+    }
+
+    .br-2.animado{
+        opacity: 0;
+    }
+
+    .br-3.animado{
+        transform: rotate(45deg)  translate(-10px, -8px);
+    }
+
+
+    .logo{
+        /* top: 2vh; */
+        margin: 15px 30px;
+        padding: auto;
+        position: fixed;
+        z-index: 1;
+    }
+
+}
+
+@media (max-width: 450px ){
+
+    .back-img{
+        width: 100%;
+        height: 5vh;
+    } 
+
+    .logo h1{
+        font-size: 1.2rem;
+    }
+
+    .back-img{
+        height: 50vh;
+    }
+
+    #products{
+
+        margin: 5vh;
+    }
+
+    .cards{
+        flex-direction: column;
+        margin-top: 60vh;
+    }
+
+    .card
+    {
+        width: 90%;
+        margin: 5vh auto;
+    }
+
+    .card-img{
+        margin-top: 5vh;
+    }
+    .card-info{
+        height: 30vh;
+    }
+
+    .btn-compra{
+        margin-bottom: 5vh;
+    }
+
+    .container-btn-procucts{
+        margin-top: 60vh;
+        width: 100%;
+        height: 10vh;
+        padding: 0%;
+    }
+
+    .container-btn-procucts button{
+        width: 80%;
+        margin: 0;
+    }
+
+    #sucursales{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container-sucursales{
+        width: 100%;
+        margin: 0;
+    }
+
+    .mapa-caba {
+        width: 90%;
+        height: 50vh;
+    }
+
+}

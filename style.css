@@ -5,7 +5,7 @@
 
 *{
     
-    color: rgb(235, 235, 235);
+    /* color: rgb(235, 235, 235); */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@
     font-family: Nunito;
 }
 body{
-    background-color: rgb(9, 29, 0);
+    background-color: #e4e3e3;
 }
 
 html{
@@ -25,6 +25,7 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
     
     
 }
@@ -61,6 +62,7 @@ header{
 .logo h1{
     font-size: 1.5rem;
     text-transform: uppercase;
+    color: #f5f5f5;
 }
 
 .site-nav{
@@ -79,6 +81,11 @@ header{
     margin:auto 30px;
     text-decoration: none;
     font-size: 1.5rem;
+    color: white;
+}
+
+.enlaces-menu li a{
+    color: white;
 }
 
 
@@ -88,6 +95,8 @@ header{
     padding-bottom: 10px;
     transition: 0.3s;
 }
+
+
 
 
 
@@ -103,7 +112,7 @@ header{
 
 .hamburger span{
     display: block;
-    background-color: white;
+    background-color: #f5f5f5;
     height: 3px;
     width: 35px;
     margin: 10px auto;
@@ -137,13 +146,135 @@ header{
 #home{
     width: 100%;
     height: 100vh;
-    background-image: url(img/cafe.jpg);
-    background-attachment: contain;
+    background-image: url(img/cafe3.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
+
+#home img{
+    width: 60px;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    animation: rebote .6s alternate infinite;
+}
+
+@keyframes rebote{
+    0%{
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+
+#info{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info h2{
+    color: chocolate;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 10vh;
+}
+
+#info h2 span{
+    color: #333333;
+}
+
+#info p{
+    font-size: 2rem;
+    color: #333333;
+    width: 80%;
+    text-align: center;
+}
+
+
+
+
+#cafeto{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/cafe2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cafeto h2{
+    color: #f5f5f5;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10vh;
+}
+
+#cafeto p{
+    color: #f5f5f5;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    font-weight: 600;
+}
+
+#latte-art{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.latte-art-img{
+    width: 40%;
+    height: 70%;
+    background-image: url(img/cafe4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.latte-art-text{
+    width: 40%;
+    height: 70%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.latte-art-text p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
 
 
 #products
@@ -152,13 +283,12 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    margin-bottom: 7vh;
 
 }
 
 #products h2{
-    color: white;
-    margin-top: 10vh;
+    color: #1a1a1a;
     font-size: 3rem;
     margin: 0;
 }
@@ -170,24 +300,33 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
 
 .card{
     width: 30%;
     height: 80%;
-    margin: auto 1%;
-    border: 1px solid chocolate;
-    border-radius: 5%;
+    margin: auto 10px;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(214, 214, 214);
+    transition: all .5s ease-in-out;
+}
+
+.card:hover{
+    transition: all .5s ease-in-out;
+    border: 1px solid #5a5a5a;
+    background-color: rgb(218, 218, 218);
 }
 
 .card-img{
-    margin: auto;
-    width: 45%;
+    margin-left: 40%;
+    margin-top: 5vh;
+    width: 50%;
 }
+
 
 .card-img img{
     width:100%;
@@ -210,60 +349,111 @@ header{
     text-transform: uppercase;
 }
 
+
 .card-info p{
     font-size: 1.2rem;
 }
 
 .card-info p:nth-last-child(2){
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: chocolate;
 }
 
-.btn-compra{
-    width: 50%;
-    padding: 5px;
-    color: white;
-    font-size: 1.2rem;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-top: 2vh;
+.card-info p:nth-last-child(1){
+    margin-bottom: 4vh;
 }
 
-.btn-compra:hover
-{
-    background-color: white;
-    color: black;
-    border-radius: 15px;
 
-}
 
-.container-btn-procucts{
+
+
+
+
+
+
+#carrousel{
     width: 100%;
-    height: 10vh;
+    height: 70vh;
+}
+
+.container-carrousel{
+    width: 100%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-bottom: 20vh;
 }
 
-.container-btn-procucts button {
-    width: 30%;
-    height: 100%;
-    color: white;
-    font-size: 1.8rem;
-    border-radius: 15px;
-    border: none;
+.btn-previous, .btn-next{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: calc(50%-10px);
     cursor: pointer;
+    line-height: 0px;
+    text-align: center;
+    color: rgb(59, 59, 59);
+    opacity: 50%;
+    font-size: 2.2rem;
     background-color: transparent;
-    border: 2px solid chocolate;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
 }
 
-.container-btn-procucts button:hover{
-    background-color: chocolate;
-    color: black;
+.btn-previous:hover, .btn-next:hover{
+    opacity: 100%;
+    color: chocolate;
 }
+
+.btn-previous{
+    left: 40px;
+}
+
+.btn-next{
+    right: 40px;
+}
+
+.carrousel__lista{
+    width: 90%;
+    overflow: hidden;
+    
+}
+
+.carrousel__lista img{
+    width: 40%;
+}
+
+
+.carrousel__indicadores .glider-dot{
+    display: block;
+    width: 30px;
+    height: 4;
+    background: rgb(56, 56, 56);
+    opacity: .2;
+    border-radius: 0;
+}
+
+.carrousel__indicadores .glider-dot:hover{
+    opacity: .7;
+}
+
+.carrousel__indicadores .glider-dot.active{
+    opacity: 1;
+    background: chocolate;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #sucursales{
     width: 97%;
@@ -292,7 +482,7 @@ header{
 
 .container-sucursales p{
     font-size: 2rem;
-    color: chocolate;
+    color: #d2691e;
 }
 
 .mapa-caba{
@@ -311,6 +501,7 @@ footer{
     width: 100%;
     height: 10vh;
     background-color: black;
+    color: #f5f5f5;
     margin-top: 5vh;
     display: flex;
     justify-content: center;

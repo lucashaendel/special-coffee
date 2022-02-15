@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="En">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -20,7 +22,7 @@
             </span>
                 <ul class="enlaces-menu">
                     <li>
-                        <a href="#home">home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
                         <a href="#products">Products</a>
@@ -30,7 +32,7 @@
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
-                    </li>
+                    </li>                   
                 </ul>
 
                 <button class="hamburger" type="button"> 
@@ -42,21 +44,43 @@
         </header>
         
         
-        <section id="home">
+        <main id="home">
+            <a href="#info"><img src="img/down-arrow2.png" alt=""></a>
+            
+        </main>
 
+        <section id="info">
+            <h2 data-aos="fade-right"><span>The origin of coffe </span>...</h2>
+            <p data-aos="fade-left">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain flowering plants in the Coffea genus.</p>
+            <p data-aos="fade-left">From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee.</p>
+            <p data-aos="fade-left">The seeds are then roasted, a process which transforms them into a consumable product: roasted coffee, which is ground into fine particles that are typically steeped in hot water before being filtered out, producing a cup of coffee.</p>
         </section>
         
-       
+       <section id="cafeto">
+        <h2 data-aos="fade-right">Coffea</h2>
+        <p data-aos="fade-left">Coffea species are shrubs or small trees native to tropical and southern Africa and tropical Asia. The seeds of some species, called coffee beans, are used to flavor various beverages and products.</p>
+        <p data-aos="fade-left">The fruits, like the seeds, contain a large amount of caffeine, and have a distinct sweet taste and are often juiced.</p>
+       </section>
+
+       <section id="latte-art">
+           <div class="latte-art-img"  data-aos="zoom-in"></div>
+           <div class="latte-art-text" data-aos="zoom-in">
+               <p>Latte art is a method of preparing coffee created by pouring microfoam into a shot of espresso and resulting in a pattern or design on the surface of the latte.</p>
+               <p> It can also be created or embellished by simply "drawing" in the top layer of foam. Latte art is particularly difficult to create consistently, due to the demanding conditions required of both the espresso shot and milk.</p>
+               <p>This, in turn, is limited by the experience of the barista and quality of the espresso machine.</p>
+               <p>The pour itself, then, becomes the last challenge for the latte artist. The term is not limited to latte coffee but also applies to other beverages containing milk foam, such as cappuccino and hot chocolate.</p>
+           </div>
+       </section>
 
         
         
-        <div id="products">
+        <!-- <div id="products">
             <h2>PRODUCTS</h2>
         </div>
         
         <div class="cards">
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <div class="card-img">
                     <img src="img/coffee-bag.svg" alt="">
                 </div>
@@ -68,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <div class="card-img">
                     <img src="img/coffee-bag.svg" alt="">
                 </div>
@@ -80,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <div class="card-img">
                     <img src="img/coffee-bag.svg" alt="">
                 </div>
@@ -92,10 +116,108 @@
                 </div>
             </div>
 
+        </div> -->
+
+        <div id="products" data-aos="fade-right">
+            <h2>PRODUCTS</h2>
         </div>
-        <div class="container-btn-procucts">
-            <button class="btn-products">Ver todos los productos</button>
+
+        <div id="carrousel" data-aos="fade-left">
+            <div class="container-carrousel">
+                <button aria-label="previous" class="btn-previous"><</button>
+
+            <div class="carrousel__lista">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/coffee-bag.svg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h4>Ethiopia</h4>
+                        <p>medium intensity</p>
+                        <p>250 Gr</p>
+                        <p>Quality: 97.5 pts</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/coffee-bag.svg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h4>Guatemala</h4>
+                        <p>Low intensity</p>
+                        <p>250 Gr</p>
+                        <p>Quality: 93 pts</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/coffee-bag.svg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h4>Colombia</h4>
+                        <p>High intensity</p>
+                        <p>500 Gr</p>
+                        <p>Quality: 90.5 pts</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/coffee-bag.svg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h4>Brasil</h4>
+                        <p>High intensity</p>
+                        <p>1 Kg</p>
+                        <p>Quality: 88 pts</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/coffee-bag.svg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h4>Peru</h4>
+                        <p>High intensity</p>
+                        <p>250 Gr</p>
+                        <p>Quality: 86.5 pts</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/coffee-bag.svg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h4>Ecuador</h4>
+                        <p>High intensity</p>
+                        <p>500 Gr</p>
+                        <p>Quality: 84 pts</p>
+                    </div>
+                </div>
+            </div>
+
+                <button aria-label="next" class="btn-next">></button>
+            </div>
+
+            <div role="tablist" class="carrousel__indicadores"></div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div id="sucursales">
@@ -115,10 +237,15 @@
     
 
     <footer>
-        <p>&copy; 2021. Derechos reservados</p>
+        <p>&copy; Copyright 2021. By <a href="https://lucashaendel.vercel.app" target="_blank">Lucas Haendel</a></p>
     </footer>
 
-   
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 </html>

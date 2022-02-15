@@ -132,13 +132,14 @@ header{
     /* border: 1px solid; */
     width: 50%;
     height: 80vh;
-    background-color: rgba(255, 255, 255, 0.123);
-    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.219);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: 0px 0px 15px 2px rgba(36, 36, 36, 0.795);
 }
 
 .contact-title{
@@ -171,7 +172,8 @@ header{
     height: 5vh;
     margin: 0 5%;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
     background-color: transparent;
     color: black;
     outline: none;
@@ -179,8 +181,12 @@ header{
 
 .container-contact input::placeholder{
     color: black;
-    
-    
+   padding-left: 10px;
+}
+
+
+.container-contact input:focus{
+    border: 1px solid
 }
 
 .container-contact textarea{
@@ -328,9 +334,10 @@ input[type=number]::-webkit-outer-spin-button {
         margin-bottom: 0;
     }
 
-    input, textarea, button{
+    .container-contact input, .container-contact textarea, .container-contact button{
         font-size: 1.2rem;
         font-weight: 600;
+        width: 80%;
     }
 
     .container-contact input{

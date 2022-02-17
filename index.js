@@ -11,15 +11,12 @@ $(document).ready(function(){
 });
 
 
-const hamburger = document.querySelector('.hamburger');
-const enlaces = document.querySelector('.enlaces-menu');
-const barras = document.querySelectorAll('.hamburger span');
-
-hamburger.addEventListener('click', ()=>{
-  enlaces.classList.toggle('activado');
-  barras.forEach(child => {child.classList.toggle('animado')});
-
-});
+function cambiarClase(){
+  let siteNav = document.getElementById('site-nav');
+  siteNav.classList.toggle('site-nav-open');
+  let menuOpen = document.getElementById('menu-toggle');
+  menuOpen.classList.toggle('menu-open');
+}
 
 
 window.addEventListener('load', function(){

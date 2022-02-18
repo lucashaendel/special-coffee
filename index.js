@@ -24,7 +24,7 @@ window.addEventListener('load', function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     // draggable: true,
-    duration: 2,
+    duration: 3,
     dots: '.carrousel__indicadores',
     arrows: {
       prev: '.btn-previous',
@@ -32,14 +32,14 @@ window.addEventListener('load', function(){
     },
     responsive: [
       {
-        // screens greater than >= 775px
+        // screens greater than >= 800px
         breakpoint: 800,
         settings: {
           // Set to `auto` and provide item width to adjust to viewport
           slidesToShow: '2',
           slidesToScroll: '2',
           itemWidth: 150,
-          duration: 2
+          duration: 1.5
           
         }
       },{
@@ -49,7 +49,7 @@ window.addEventListener('load', function(){
           slidesToShow: 3,
           slidesToScroll: 3,
           itemWidth: 150,
-          duration: 2
+          duration: 1.7
         }
       }
     ]
